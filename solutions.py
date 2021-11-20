@@ -53,7 +53,7 @@ def first_occur(s):
       l.append(word)
   print(l[0])
 
-first_occur('hellowworld').  #expects 'l'
+first_occur('hellowworld')  # expects 'l'
 ###################################################################
 def dot_m(x,y):#dot product
   import numpy as np
@@ -62,7 +62,7 @@ x=[1,2,3]
 y=[4,5,6]
 dot_m(x,y)
 ###################################################################
-#######################################################################
+
 def to_dictionary(a):
     """nested list to dictionary"""
     dictc={}
