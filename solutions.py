@@ -7,6 +7,8 @@ def sum_of_nested_list(list):   # sum of nested list
       summ+=i
   print(summ)    
 sum_of_nested_list(nestd_lst)
+
+########################################################
 def to_one(list_):
   """nested list to one list """
   l=[]
@@ -14,8 +16,9 @@ def to_one(list_):
     for i in a:
       l.append(i)
   print(l)    
-to_one(nestd_lst)
-def max_(list_):#return max of a number
+to_one(nested_lst)
+def max_(list_):
+  """return  the max of a number"""
   maxx=0
   for i in list_:
     for a in i:
@@ -23,18 +26,22 @@ def max_(list_):#return max of a number
         maxx=a
   print(maxx)
 
-max_(nestd_lst) 
-strings='hi my name is is is yonatan yonatan beyn my'
-def count (stri):#string to world list and count
+max_(nested_lst) 
+##########################################
+strings=input(' write the string to count ')
+########################################################################################
+def count(stri):
+  """string to world list and count"""
   dic={}
-  listt=stri.split() 
-  for word in listt:
+  word_list=stri.split() 
+  for word in word_list:
     if word not in dic:
       dic[word]=1
     else:
       dic[word]+=1  
   print(dic)      
 count(strings)
+#####################################################################
 def first_occur(s):# first occur 
   dic={}
   l=[]
@@ -46,13 +53,16 @@ def first_occur(s):# first occur
   print(l[0])
 
 first_occur('helloworld')
+###################################################################
 def dot_m(x,y):#dot product
   import numpy as np
   print(np.dot(x,y))
 x=[1,2,3]  
 y=[4,5,6]
 dot_m(x,y)
-def maxi():# maximum   result for dictionary
+###################################################################
+def maxi():
+  """ maximum   result for dictionary"""
   from collections import Counter
   count= Counter('arsenal')
   max=0
@@ -66,12 +76,18 @@ def maxi():# maximum   result for dictionary
   print(f"the max is {name} with the value of {max} ")
   #print(f"{max} is the maximum  ")
 maxi()
+
+###################################################
+
 a = [["Bob","87"], ["Mike", "55"], ["Jason","35"], ["ashley", "155"], ["Jessica", "99"]]
-#dictc={}
-def dict_to():# nested list to dictionary
+#######################################################################
+def to_dict():
+    """nested list to dictionary"""
     dictc={}
     for key in a:
         dictc[key[0]]=key[1]
     print(dictc)   
         
-z=dict_to()
+to_dict()
+#####################################
+
