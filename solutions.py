@@ -55,12 +55,12 @@ def first_occur(s):
 
 first_occur('hellowworld')  # expects 'l'
 ###################################################################
-def dot_m(x,y):#dot product
+def dot_product(x,y): #dot product
   import numpy as np
   print(np.dot(x,y))
 x=[1,2,3]  
 y=[4,5,6]
-dot_m(x,y)
+dot_product(x,y)
 ###################################################################
 
 def to_dictionary(a):
