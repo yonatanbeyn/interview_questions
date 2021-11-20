@@ -42,7 +42,7 @@ def count(stri):
   print(dic)      
 count(strings)
 #####################################################################
-def first_occur(s):
+def first_recurring(s):
   ""  first reccurring character"""
   dic={}
   l=[]
@@ -53,7 +53,7 @@ def first_occur(s):
       l.append(word)
   print(l[0])
 
-first_occur('hellowworld')  # expects 'l'
+first_recurring('hellowworld')  # expects 'l'
 ###################################################################
 def dot_product(x,y): #dot product
   import numpy as np
@@ -71,7 +71,7 @@ def to_dictionary(a):
     print(dictc)   
 a = [["Bob","87"], ["Mike", "55"], ["Jason","35"], ["ashley", "155"], ["Jessica", "99"]]
 
-to_dictionary(a)          ###expects {'Bob': '87', 'Mike': '55', 'Jason': '35', 'ashley': '155', 'Jessica': '99'}
+to_dictionary(a)          ###expects {'Bob': '87', 'Mike': '55', 'Jason': '35', 'ashley': '100', 'Jessica': '99'}
 
 #####################################
 
@@ -89,7 +89,7 @@ def maxiimum_score():
       #print(i)
   print(f"the maximum scorer  is {name} with the result of {max} ")
   
-maximum_score()
+maximum_score() #ashley 100
 
 ###################################################
 
