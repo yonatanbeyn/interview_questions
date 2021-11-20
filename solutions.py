@@ -62,33 +62,34 @@ x=[1,2,3]
 y=[4,5,6]
 dot_m(x,y)
 ###################################################################
-def maxi():
-  """ maximum   score from  dictionary"""
-  from collections import Counter
-  count= Counter('arsenal')
-  max=0
-  name = ''
-  print(count)
-  for i in count:
-    if count[i] >max:
-      max=count[i]
-      name = i
-      #print(i)
-  print(f"the max is {name} with the value of {max} ")
-  #print(f"{max} is the maximum  ")
-maxi()
-
-###################################################
-
-a = [["Bob","87"], ["Mike", "55"], ["Jason","35"], ["ashley", "155"], ["Jessica", "99"]]
 #######################################################################
-def to_dict():
+def to_dictionary(a):
     """nested list to dictionary"""
     dictc={}
     for key in a:
         dictc[key[0]]=key[1]
     print(dictc)   
-        
-to_dict()
+a = [["Bob","87"], ["Mike", "55"], ["Jason","35"], ["ashley", "155"], ["Jessica", "99"]]
+
+to_dictionary(a)          ###expects {'Bob': '87', 'Mike': '55', 'Jason': '35', 'ashley': '155', 'Jessica': '99'}
+
 #####################################
+
+def maxiimum_score():
+  """ maximum   score from  dictionary"""
+  from collections import Counter
+  score = to_dictionary(a)  
+  max=0
+  name = ''
+  print(count)
+  for i in score:
+    if score[i] >max:
+      max=score[i]
+      name = i
+      #print(i)
+  print(f"the maximum scorer  is {name} with the result of {max} ")
+  
+maximum_score()
+
+###################################################
 
