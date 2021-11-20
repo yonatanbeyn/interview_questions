@@ -6,7 +6,7 @@ def sum_of_nested_list(list):   # sum of nested list
     for i in a:
       summ+=i
   print(summ)    
-sum_of_nested_list(nestd_lst)
+sum_of_nested_list(nested_lst)
 
 ########################################################
 def to_one(list_):
@@ -17,8 +17,8 @@ def to_one(list_):
       l.append(i)
   print(l)    
 to_one(nested_lst)
-def max_(list_):
-  """return  the max of a number"""
+def max_number(list_):
+  """return  the max of a number from the nested list"""
   maxx=0
   for i in list_:
     for a in i:
@@ -26,7 +26,7 @@ def max_(list_):
         maxx=a
   print(maxx)
 
-max_(nested_lst) 
+max_number(nested_lst) 
 ##########################################
 strings=input(' write the string to count ')
 ########################################################################################
@@ -42,7 +42,8 @@ def count(stri):
   print(dic)      
 count(strings)
 #####################################################################
-def first_occur(s):# first occur 
+def first_occur(s):
+  ""  first reccurring character"""
   dic={}
   l=[]
   for word in s:
@@ -52,7 +53,7 @@ def first_occur(s):# first occur
       l.append(word)
   print(l[0])
 
-first_occur('helloworld')
+first_occur('hellowworld').  #expects 'l'
 ###################################################################
 def dot_m(x,y):#dot product
   import numpy as np
@@ -62,7 +63,7 @@ y=[4,5,6]
 dot_m(x,y)
 ###################################################################
 def maxi():
-  """ maximum   result for dictionary"""
+  """ maximum   score from  dictionary"""
   from collections import Counter
   count= Counter('arsenal')
   max=0
