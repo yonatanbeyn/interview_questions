@@ -1,5 +1,5 @@
 
-nested_lst=[[12,3],[4,5,6],[1,3]]
+nested_lst=[[12,3,20],[4,5,6],[1,3,12]]
 def sum_of_nested_list(list):   # sum of nested list
   summ=0
   for a in l:
